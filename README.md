@@ -48,9 +48,6 @@ non-packetized streams, pause generators, sideband signals, and ready modes
 register-style accesses, bursts, byte enables, wait-request backpressure,
 variable-latency reads, and optional transaction recording.
 
-HDL-backed simulator regression tests will be added after the initial package
-extraction is complete.
-
 ## License
 
 Apache-2.0. See `LICENSE` and `NOTICE`.
