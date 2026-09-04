@@ -1425,7 +1425,6 @@ class AvalonSTSink(AvalonSTMonitor, AvalonSTPause):
                 frame = self._process_beat(beat, frame)
             else:
                 self.active = frame is not None
-
             if self.has_ready:
                 paused = self.full() or pause_sample
                 self.bus.ready.value = int(not paused)
@@ -1484,3 +1483,14 @@ class AvalonSTSink(AvalonSTMonitor, AvalonSTPause):
                 frame = self._process_beat(beat, frame)
             else:
                 self.active = frame is not None
+
+
+__all__ = [
+    "AvalonFormat",
+    "AvalonSTBeat",
+    "AvalonSTBus",
+    "AvalonSTFrame",
+    "AvalonSTMonitor",
+    "AvalonSTSink",
+    "AvalonSTSource",
+]

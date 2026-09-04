@@ -1,0 +1,40 @@
+# Copyright 2026 Yaroslav Mariukha
+# SPDX-License-Identifier: Apache-2.0
+
+[project]
+name = "cocotbext-avalon"
+version = "0.1.0"
+description = "Reusable Avalon-ST and Avalon-MM bus functional models for cocotb"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [
+    { name = "Yaroslav Mariukha" },
+]
+dependencies = [
+    "cocotb>=2.0,<3",
+    "cocotb-bus>=0.3,<1",
+]
+classifiers = [
+    "Framework :: cocotb",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)",
+]
+
+[project.urls]
+Source = "https://gitlab.com/yarko-fpga/cocotbext-avalon"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["cocotbext.*"]
+namespaces = true
+
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"

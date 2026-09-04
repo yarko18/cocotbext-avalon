@@ -911,8 +911,7 @@ class AvalonMMMemoryBFM(AvalonMMSlaveBFM):
     """Avalon-MM slave backed by a byte-addressed memory object.
 
     The memory object must provide ``read(address, length) -> bytes`` and
-    ``write(address, data)`` methods.  ``SparseByteMemory`` from
-    ``fpga_verification.sim.bfms.intel_dma`` satisfies this contract.
+    ``write(address, data)`` methods.
     """
 
     def __init__(
